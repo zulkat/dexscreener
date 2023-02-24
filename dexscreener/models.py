@@ -17,8 +17,9 @@ class BaseToken(BaseModel):
 
 
 class QuoteToken(BaseModel):
+    address: str
+    name: str
     symbol: str
-
 
 class TransactionCount(BaseModel):
     buys: int
